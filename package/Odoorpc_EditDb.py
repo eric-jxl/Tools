@@ -8,7 +8,7 @@ import odoorpc
 
 
 my_odoo = odoorpc.ODOO('shxijzh.rhfssc.com',port=443,protocol='jsonrpc+ssl')
-my_odoo.login('shxijzhdb','system','admin2020')
+my_odoo.login('whdhwh','system','wwwwe')
 
 # res =  my_odoo.execute('purchase.order','read',[86],['order_line'])
 # print  str(res).replace('u\'','\'').decode('unicode-escape')
