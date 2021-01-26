@@ -52,7 +52,7 @@ class FucLog(object):
                 formatter = logging.Formatter(
                     '%(asctime)s - %(pathname)s[line:%(lineno)d-%(funcName)s] - %(levelname)s: %(message)s')
                 console =logging.StreamHandler()
-                console.setLevel(logging.DEBUG)
+                console.setLevel(logging.INFO)
                 console.setFormatter(formatter)
                 handler.setFormatter(formatter)
                 logger.addHandler(handler)
