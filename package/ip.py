@@ -20,6 +20,7 @@ def ip_search(ip=None):
                 url = 'http://ip-api.com/json/' + i + '?lang=zh-CN'
                 response = requests.post(url)
                 print response.content
+
         elif isinstance(ip,basestring):
             url = 'http://ip-api.com/json/' + ip + '?lang=zh-CN'
             response = requests.post(url)

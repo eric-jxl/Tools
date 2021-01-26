@@ -39,22 +39,24 @@ class Logger(object):
 
 
 class FucLog(object):
-
     @staticmethod
     def loggerInFile(filename):  # 带参数的装饰器需要2层装饰器实现,第一层传参数，第二层传函数，每层函数在上一层返回
         def decorator(func):
             def inner(*args, **kwargs):  # 1
-                logFilePath = filename  # 日志按日期滚动，保留5天
-                logger = logging.getLogger()
+                logger = logging.getLogger(filename)
                 logger.setLevel(logging.INFO)
-                handler = TimedRotatingFileHandler(logFilePath,
+                handler = TimedRotatingFileHandler(filename,
                                                    when="d",
                                                    interval=1,
                                                    backupCount=5)
                 formatter = logging.Formatter(
                     '%(asctime)s - %(pathname)s[line:%(lineno)d-%(funcName)s] - %(levelname)s: %(message)s')
+                console =logging.StreamHandler()
+                console.setLevel(logging.DEBUG)
+                console.setFormatter(formatter)
                 handler.setFormatter(formatter)
                 logger.addHandler(handler)
+                logger.addHandler(console)
                 try:
                     result = func(*args, **kwargs)  # 2
                     logger.info(result)
