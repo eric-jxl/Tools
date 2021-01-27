@@ -22,4 +22,5 @@ remove.py 删除文件
 send_email.py  发送邮件
 
 sftp.py   ssh远程下载文件
+pgsql.py  对postgresql 增删改查操作
 ```
