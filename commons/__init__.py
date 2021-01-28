@@ -5,9 +5,9 @@
 @IDE     : PyCharm
 '''
 name = 'Eric-Tools'
-__version__ = "1.1.1"
+__version__ = "1.1.1.2"
 __author__ = 'Eric'
-__doc__ = "工具类"
+__doc__ = ["Python Daily Development Tools"]
 
 from . import exception_class
 from . import resize_image
