@@ -11,7 +11,11 @@ __doc__ = "压缩图片 默认像素1024*1024"
 try:
     import cStringIO as StringIO
 except ImportError:
-    import StringIO
+    try:
+        import StringIO
+    except ImportError:
+        from io import StringIO
+
 
 from PIL import Image
 from PIL import ImageEnhance
@@ -27,7 +31,7 @@ def decode_base64(fname,base64_data):
         file.write(decode_data)
 
 
-source_data = encode_base64('/Users/eric/Documents/photo/2a4100008d310b5fd8a8.jpeg')
+# source_data = encode_base64('/Users/eric/Documents/photo/2a4100008d310b5fd8a8.jpeg')
 
 def image_resize_image(base64_source, size=(1024, 1024), encoding='base64', filetype=None, avoid_if_small=False):
 
