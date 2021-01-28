@@ -5,9 +5,13 @@
 @IDE     : PyCharm
 '''
 name = 'Eric-Tools'
-__version__ = "1.1.1.2"
+__title__ = 'tools'
+__description__ = 'Python HTTP for Humans.'
+__version__ = "1.1.1.3"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
+__url__ = "https://github.com/Eric-jxl/Tools"
+__license__ = "MIT"
 
 from . import exception_class
 from . import resize_image
