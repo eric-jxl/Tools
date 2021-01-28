@@ -4,7 +4,9 @@
 [个人博客](https://jxlss.cn)
 
 #### Project management of Python daily tools
-
+```shell 
+    pip install Eric-Tools
+```
 
 ```
 encryption_classmethod.py  Python HMAC+MD5加密签名算法
