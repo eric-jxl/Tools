@@ -36,4 +36,4 @@ def ip_search(ip=None):
         print response.content
 
 
-ip_search(ip=["34.220.114.243",'114.84.44.228'])
+# ip_search(ip=["34.220.114.243",'114.84.44.228'])

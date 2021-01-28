@@ -90,9 +90,5 @@ class PostgreSQL(object):
         return self.operate(sql, params)
 
 
-conn = PostgreSQL('build', 'odoo', '123456', 'localhost', 5438)
 
-lt = conn.get_all("SELECT * FROM account_invoice where number='BILL/2020/0172'")
-for i in lt:
-    print i
 
