@@ -1,5 +1,5 @@
 # Tools
-
+![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 [个人博客](https://jxlss.cn)
 
@@ -8,8 +8,6 @@
 
 ```
 encryption_classmethod.py  Python HMAC+MD5加密签名算法
-
-Odoorpc_EditDb.py 涉及odoorpc 修改远程db
 
 exception_class.py  异常类
 
@@ -24,5 +22,6 @@ remove.py 删除文件
 send_email.py  发送邮件
 
 sftp.py   ssh远程下载文件
+
 pgsql.py  对postgresql 增删改查操作
 ```
