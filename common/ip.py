@@ -6,12 +6,9 @@
 '''
 
 import requests
-try:
-    from File.tools.logger import Logger,FucLog
-except ImportError:
-    from logger import Logger,FucLog
 
-@FucLog.loggerInFile('error.log')
+
+
 def ip_search(ip=None):
     assert not isinstance(ip,(int,long)),'ip类型不能为数字'
     if ip is not None:

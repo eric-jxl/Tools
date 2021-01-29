@@ -4,6 +4,8 @@
 @Time    : 2020-11-30 11:09
 @IDE     : PyCharm
 '''
+__all__ =['Logger','FuncLog']
+
 import logging
 import traceback
 from logging import handlers
@@ -38,7 +40,7 @@ class Logger(object):
         self.logger.addHandler(th)
 
 
-class FucLog(object):
+class FuncLog(object):
     @staticmethod
     def loggerInFile(filename):  # 带参数的装饰器需要2层装饰器实现,第一层传参数，第二层传函数，每层函数在上一层返回
         def decorator(func):
