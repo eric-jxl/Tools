@@ -7,7 +7,7 @@
 name = 'Eric-Tools'
 __title__ = 'tools'
 __description__ = 'Python HTTP for Humans.'
-__version__ = "1.1.2.3"
+__version__ = "1.1.2.4"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
 __url__ = "https://github.com/Eric-jxl/Tools"
@@ -20,3 +20,4 @@ from . import logger,ip
 from . import encryption_classmethod
 from . import pgsql
 from . import sftp
+import readconfig
