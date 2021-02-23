@@ -1,6 +1,6 @@
 # Tools
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![latest 1.1.2.2](https://img.shields.io/badge/latest-1.1.2.2-green.svg?style=flat)
+![latest 1.1.3](https://img.shields.io/badge/latest-1.1.3-green.svg?style=flat)
 
 [个人博客](https://jxlss.cn)
 
@@ -27,4 +27,6 @@ send_email.py  发送邮件
 sftp.py   ssh远程下载文件
 
 pgsql.py  对postgresql 增删改查操作
+
+readconfig  针对读取配置文件
 ```
