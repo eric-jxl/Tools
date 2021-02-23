@@ -7,14 +7,13 @@
 import sys
 
 import configparser
-import os
 
-proDir = os.path.split(os.path.realpath(__file__))[0]
-configPath = os.path.join(proDir, "config.ini")
+# proDir = os.path.split(os.path.realpath(__file__))[0]
+# configPath = os.path.join(proDir, "config.ini")
 
 
 class ReadConfig(object):
-    def __init__(self, title, name):
+    def __init__(self, configPath,title, name):
         self.conf = configparser.ConfigParser()
         self.title = title
         self.name = name
