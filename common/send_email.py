@@ -24,7 +24,7 @@ def mail(send_email,receive_email,send_nickname,receive_nickname,pwd):
         msg['To'] = formataddr([receive_nickname, receive_email])  # 括号里的对应收件人邮箱昵称、收件人邮箱账号
         msg['Subject'] = str("发送邮件测试").decode('utf-8') # 邮件的主题，也可以说是标题
 
-        server = smtplib.SMTP_SSL("smtp.qq.com", 4655)  # 发件人邮箱中的SMTP服务器，端口是25
+        server = smtplib.SMTP_SSL("smtp.qq.com", 465)  # 发件人邮箱中的SMTP服务器，端口是25
         server.login(send_email, pwd)
         server.sendmail(send_email, [receive_email, ], msg.as_string())  # 括号中对应的是发件人邮箱账号、收件人邮箱账号、发送邮件
         server.quit()  # 关闭连接
