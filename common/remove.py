@@ -30,7 +30,7 @@ class RemoveFile(object):
                 print 'no such file: %s' % filename
 
 
-FILE_DIR = '/Users/eric/Documents/rh_gzw_property/'
+FILE_DIR = '/home'
 
 if __name__ == '__main__':
 

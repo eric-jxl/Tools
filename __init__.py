@@ -2,4 +2,4 @@
 name='Eric-Tools'
 
 
-import commons
+import common
