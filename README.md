@@ -1,6 +1,6 @@
 # Tools
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![latest 1.1.3.1](https://img.shields.io/badge/latest-1.1.3.1-green.svg?style=flat)
+![latest 1.1.3.2](https://img.shields.io/badge/latest-1.1.3.2-green.svg?style=flat)
 
 [个人博客](https://jxlss.cn)
 
