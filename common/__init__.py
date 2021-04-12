@@ -7,7 +7,7 @@
 name = 'Eric-Tools'
 __title__ = 'tools'
 __description__ = 'Python HTTP for Humans.'
-__version__ = "1.1.3.3"
+__version__ = "1.1.4"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
 __url__ = "https://github.com/Eric-jxl/Tools"
