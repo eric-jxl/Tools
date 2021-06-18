@@ -1,10 +1,10 @@
 # Tools
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![latest 1.1.4](https://img.shields.io/badge/latest-1.1.4-green.svg?style=flat)
+![latest 1.1.5](https://img.shields.io/badge/latest-1.1.4-green.svg?style=flat)
 
 [个人博客](https://jxlss.cn)
 
-[Odoo14](https://jxlss.cn)
+[Redis](https://jxlss.cn)
 
 ##### Project management of Python daily tools
 ```shell 
