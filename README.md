@@ -4,7 +4,8 @@
 
 [个人博客](https://jxlss.cn)
 
-[Redis](https://jxlss.cn)(https://eric-jxl.github.io)
+[Redis](https://jxlss.cn)
+https://eric-jxl.github.io
 
 ##### Project management of Python daily tools
 ```shell 
