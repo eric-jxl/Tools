@@ -2,9 +2,10 @@
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ![latest 1.1.7](https://img.shields.io/badge/latest-1.1.7-green.svg?style=flat)
 
-[个人博客](https://jxlss.cn)
 
 [Redis](https://jxlss.cn)
+
+***备用地址***
 ```
 https://eric-jxl.github.io
 ```
