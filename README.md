@@ -13,7 +13,9 @@ https://eric-jxl.github.io
 ```shell 
 pip install Eric-Tools
 ```
-
+```
+https://pypi.org/project/Eric-Tools/
+```
 ```
 encryption_classmethod.py  Python HMAC+MD5加密签名算法
 
