@@ -4,6 +4,9 @@
 @Time    : 2021-08-02 09:50
 @IDE     : PyCharm
 '''
+from functools import wraps
+
+
 class lazy_property(object):
     """
     Decorator for a lazy property of an object, i.e., an object attribute
@@ -33,3 +36,19 @@ class lazy_property(object):
         for name in obj_dict.keys():
             if isinstance(getattr(cls, name, None), lazy_property):
                 obj_dict.pop(name)
+
+def synchronized(lock_attr='_lock'):
+    '''
+    :param lock_attr: sync lock
+    '''
+    def decorator(func):
+        @wraps(func)
+        def wrapper(self, *args, **kwargs):
+            lock = getattr(self, lock_attr)
+            try:
+                lock.acquire()
+                return func(self, *args, **kwargs)
+            finally:
+                lock.release()
+        return wrapper
+    return decorator
