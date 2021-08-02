@@ -1,6 +1,6 @@
 # Tools
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![latest 1.1.6](https://img.shields.io/badge/latest-1.1.6-green.svg?style=flat)
+![latest 1.1.7](https://img.shields.io/badge/latest-1.1.7-green.svg?style=flat)
 
 [个人博客](https://jxlss.cn)
 
@@ -40,4 +40,6 @@ jwt_encrypt     生成jwt Access Token 加密及解密
 convert_json    支持json和object之间转换
 
 Abstract.py     抽象类模型
+
+decorator.py    惰性属性装饰器
 ```
