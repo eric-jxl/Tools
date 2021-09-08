@@ -11,7 +11,7 @@ __version__ = "1.2.0"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
 __url__ = "https://github.com/Eric-jxl/Tools"
-__license__ = "MIT"
+__license__ = "Apache"
 
 import exception_class
 import resize_image
