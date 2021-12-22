@@ -1,6 +1,6 @@
 # Tools
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![latest 1.2.1.1](https://img.shields.io/badge/latest-1.2.1.1-green.svg?style=flat)
+![latest 1.2.2](https://img.shields.io/badge/latest-1.2.2-green.svg?style=flat)
 
 
 [Redis](https://eric-jxl.github.io)

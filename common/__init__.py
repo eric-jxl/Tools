@@ -21,7 +21,7 @@ import exception_class
 name = 'Eric-Tools'
 __title__ = 'tools'
 __description__ = 'Python HTTP for Humans.'
-__version__ = "1.2.1.1"
+__version__ = "1.2.2"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
 __url__ = "https://github.com/Eric-jxl/Tools"
