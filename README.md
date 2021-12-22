@@ -3,12 +3,8 @@
 ![latest 1.2.1](https://img.shields.io/badge/latest-1.2.0-green.svg?style=flat)
 
 
-[Redis](https://jxlss.cn)
+[Redis](https://eric-jxl.github.io)
 
-***备用地址***
-```
-https://eric-jxl.github.io
-```
 
 ##### Project management of Python daily tools
 ```shell 
