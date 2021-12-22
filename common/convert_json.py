@@ -5,12 +5,14 @@
 @IDE     : PyCharm
 '''
 
+
 def obj_convert_dict(obj):
     d = {}
     d['__class__'] = obj.__class__.__name__
     d['__module__'] = obj.__module__
     d.update(obj.__dict__)
     return d
+
 
 def dict_convert_obj(d):
     if '__class__' in d:
