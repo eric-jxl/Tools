@@ -4,6 +4,7 @@
 @Time    : 2021-08-02 09:50
 @IDE     : PyCharm
 '''
+import sys
 from functools import wraps
 
 
@@ -51,4 +52,19 @@ def synchronized(lock_attr='_lock'):
             finally:
                 lock.release()
         return wrapper
+    return decorator
+
+
+def alias(*aliases):
+    """ 
+    Decorating a class with @alias('FOO', 'BAR', ..) allows the class to
+    be referenced by each of the names provided as arguments.
+    """
+    def decorator(cls):
+        # alias must be set in globals from caller's frame
+        caller = sys._getframe(1)
+        globals_dict = caller.f_globals
+        for alias in aliases:
+            globals_dict[alias] = cls 
+        return cls 
     return decorator
