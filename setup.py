@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="eric_tools",
-    version="1.2.4",
+    version="1.2.4.1",
     author="Eric",
     author_email="jxleric95@gmail.com",
     description="Python Daily Development Tools",
