@@ -8,10 +8,10 @@
 
 ##### Project management of Python daily tools
 ```shell 
-pip install Eric-Tools
+pip install eric_tools
 ```
 ```
-https://pypi.org/project/Eric-Tools/
+https://pypi.org/project/eric_tools/
 ```
 ```
 encryption_classmethod.py  Python HMAC+MD5加密签名算法
