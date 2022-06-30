@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Eric-Tools",
-    version="1.2.3.3",
+    name="eric_tools",
+    version="1.2.4",
     author="Eric",
     author_email="jxleric95@gmail.com",
     description="Python Daily Development Tools",
