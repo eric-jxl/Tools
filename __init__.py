@@ -2,4 +2,3 @@
 name='Eric-Tools'
 License = 'Apache'
 
-import common
