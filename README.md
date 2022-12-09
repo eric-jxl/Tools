@@ -3,7 +3,7 @@
 ![latest 1.2.4.1](https://img.shields.io/badge/latest-1.2.4.1-green.svg?style=flat)
 
 
-[Redis](https://eric-jxl.github.io)
+[Redis](https://eric-jxl.github.io/bak/index.html)
 
 
 ##### Project management of Python daily tools
