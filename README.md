@@ -1,18 +1,16 @@
 # Tools
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![latest 1.2.4.1](https://img.shields.io/badge/latest-1.2.4.1-green.svg?style=flat)
+![latest 1.2.5](https://img.shields.io/badge/latest-1.2.5-green.svg?style=flat)
 
 
 [Redis](https://eric-jxl.github.io/bak/index.html)
 
 
-##### Project management of Python daily tools
+#### Project management of Python daily tools
 ```shell 
 pip install eric_tools
 ```
-```
-https://pypi.org/project/eric_tools/
-```
+
 ```
 encryption_classmethod.py  Python HMAC+MD5加密签名算法
 
@@ -41,6 +39,4 @@ convert_json    支持json和object之间转换
 Abstract.py     抽象类模型
 
 decorator.py    惰性属性装饰器
-
-BingDwenDwen.py  冰墩墩
 ```
