@@ -1,15 +1,11 @@
 name: Publish Python Package
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  release:
+    types:['created']
 
 jobs:
-  build-and-publish:
+  build-and-publish-PyPi:
     runs-on: ubuntu-latest
 
     steps:
