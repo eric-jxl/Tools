@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![latest 1.3.2](https://img.shields.io/badge/latest-1.3.2-green.svg?style=flat)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/eric-jxl/Tools/latest)
+[![Publish Python Package](https://github.com/eric-jxl/Tools/actions/workflows/publish-pypi.yml/badge.svg)](https://github.com/eric-jxl/Tools/actions/workflows/publish-pypi.yml)
 
 
 [Reids](https://eric-jxl.github.io/bak/index.html)
