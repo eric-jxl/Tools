@@ -49,4 +49,4 @@ pip install eric_tools
 > 
 > * nginx_log.py          nginx日志解析(默认access.log)
 >
-> * [eric-tools==1.3](https://pypi.org/project/eric-tools/1.3/)
+> * [eric-tools==1.3.1](https://pypi.org/project/eric-tools/1.3.1/)
