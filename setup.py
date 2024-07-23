@@ -15,14 +15,13 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Eric-jxl/Tools",
     packages=setuptools.find_packages(),
-    license="MIT License",
     keyword=["eric", "tools"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.5.x',
+    python_requires='>=3.0',
     install_requires=[
         'psycopg2',
         'requests',
