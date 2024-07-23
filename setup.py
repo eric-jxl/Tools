@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="eric_tools",
-    version="1.2.6",
+    version="1.3",
     author="Eric",
     author_email="jxleric95@gmail.com",
     description="Python Daily Development Tools",
@@ -27,5 +27,6 @@ setuptools.setup(
         'requests',
         'paramiko',
         'Pillow',
+        'xlsxwriter'
     ]
 )

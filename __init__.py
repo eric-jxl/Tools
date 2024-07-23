@@ -1,4 +1,4 @@
-#-*- coding=utf-8 -*-
-name='Eric-Tools'
+# -*- coding=utf-8 -*-
+name = 'Eric-Tools'
 License = 'Apache'
-
+Version = '1.3'
