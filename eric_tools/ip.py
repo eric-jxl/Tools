@@ -8,26 +8,23 @@
 import requests
 
 
-
 def ip_search(ip=None):
-    assert not isinstance(ip,(int,long)),'ip类型不能为数字'
+    assert not isinstance(ip, (int, float)), 'ip类型不能为数值'
     if ip is not None:
         if isinstance(ip, (list, set)):
             for i in ip:
                 url = 'http://ip-api.com/json/' + i + '?lang=zh-CN'
                 response = requests.post(url)
-                print response.content
+                print(response.json())
 
-        elif isinstance(ip,basestring):
+        elif isinstance(ip, str):
             url = 'http://ip-api.com/json/' + ip + '?lang=zh-CN'
             response = requests.post(url)
             res = response.json()
-            print str({u'国家': res['country'], u'省/直辖市': res['regionName'], u'城市': res['city'],
-                       u'运营商': res['isp']}).replace('u\'', '\'') \
-                .encode('utf-8').decode('unicode_escape')
-
+            print(str({'国家': res['country'], '省/直辖市': res['regionName'], '城市': res['city'],
+                       '运营商': res['isp']}))
 
     else:
         url = 'http://ip-api.com/json/?lang=zh-CN'
         response = requests.post(url)
-        print response.content
+        print(response.content)
