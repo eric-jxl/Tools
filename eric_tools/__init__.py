@@ -12,8 +12,8 @@ from . import async_queue, downloader, logMixin, nginx_log, excel_generator
 name = 'Eric-Tools'
 __title__ = 'tools'
 __description__ = 'Python HTTP for Humans.'
-__version__ = "1.3.1"
+__version__ = "1.3.2"
 __author__ = 'Eric'
 __doc__ = ["Python Daily Development Tools"]
 __url__ = "https://github.com/Eric-jxl/Tools"
-__license__ = "Apache"
+__license__ = "MIT License"

@@ -1,6 +1,6 @@
 # Tools
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![latest 1.3.1](https://img.shields.io/badge/latest-1.3.1-green.svg?style=flat)
+![latest 1.3.2](https://img.shields.io/badge/latest-1.3.2-green.svg?style=flat)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/eric-jxl/Tools/latest)
 
 
@@ -49,4 +49,3 @@ pip install eric_tools
 > 
 > * nginx_log.py          nginx日志解析(默认access.log)
 >
-> * [eric-tools==1.3.1](https://pypi.org/project/eric-tools/1.3.1/)
