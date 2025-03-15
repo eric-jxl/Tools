@@ -1,0 +1,46 @@
+debug: false
+mode: "dev"
+name: "My App"
+age: 25
+companies:
+    -
+        id: 1
+        name: company1
+        price: 200W
+        staffs:
+            -
+                id: 1
+                name: staff1
+                age: 25
+            -
+                id: 2
+                name: staff2
+                age: 2688
+    -
+        id: 2
+        name: company2
+        price: 500W
+
+languages:
+  - Ruby
+  - Perl
+  - Python 
+websites:
+  YAML: yaml.org 
+  Ruby: ruby-lang.org 
+  Python: python.org 
+  Perl: use.perl.org
+
+
+now: 2025-03-01 12:00:00
+defaults: &defaults
+  adapter:  postgres
+  host:     localhost
+
+development:
+  database: myapp_development
+  <<: *defaults
+
+test:
+  database: myapp_test
+  <<: *defaults

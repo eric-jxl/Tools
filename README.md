@@ -1,6 +1,6 @@
 # Tools
 [![License](https://img.shields.io/:license-apache-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![latest 1.3.2](https://img.shields.io/badge/latest-1.3.2-green.svg?style=flat)
+![latest 1.3.3](https://img.shields.io/badge/latest-1.3.3-green.svg?style=flat)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/eric-jxl/Tools/latest)
 [![Publish Python Package](https://github.com/eric-jxl/Tools/actions/workflows/publish-pypi.yml/badge.svg)](https://github.com/eric-jxl/Tools/actions/workflows/publish-pypi.yml)
 
@@ -42,11 +42,13 @@ pip install eric_tools
 
 >[!TIP]
 >
-> * async_queue.py        异步队列操作
+> * async_queue.py          异步队列操作
 > 
-> * downloader.py         下载器
+> * downloader.py           下载器
 > 
-> * logMixIn.py           日志元类和高级日志装饰器
+> * logMixIn.py             日志元类和高级日志装饰器
 > 
-> * nginx_log.py          nginx日志解析(默认access.log)
+> * nginx_log.py            nginx日志解析(默认access.log)
 >
+> * dynamic_settings        一个动态加载配置类(支持toml、yml、conf、csv、ini等)
+> 
