@@ -162,7 +162,7 @@ def get_config_key(key):
     """获取指定配置项的值，并支持自动重新加载"""
     config = DynamicConfig("config.yml", debug=True, mode="production")
     config.force_reload()  # ✅ 先重新加载配置
-    value = Config.get(key)  # ✅ 取值
+    value = config.get(key)  # ✅ 取值
     if value is None:
         return jsonify({"error": "Key not found"}), 404  # ✅ 404 + 友好错误信息
     return jsonify(value)
