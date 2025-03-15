@@ -42,9 +42,8 @@ class DynamicConfig(MutableMapping):
 
     def _start_watching(self):
         """Starts a background thread to monitor file changes."""
-        event_handler = ConfigFileHandler(self, self.watch_file)
         observer = Observer()
-        observer.schedule(event_handler, path=os.path.dirname(
+        observer.schedule(ConfigFileHandler(self, self.watch_file), path=os.path.dirname(
             self.watch_file) or ".", recursive=False)
         observer.start()
         self._observer = observer
@@ -146,9 +145,6 @@ class DynamicConfig(MutableMapping):
             self._observer.join()
 
 
-config = DynamicConfig("config.yml", debug=True, mode="production")
-
-
 @app.route("/", methods=["GET"])
 def index():
     return redirect("/config/")
@@ -156,6 +152,7 @@ def index():
 
 @app.route("/config/", methods=["GET"])
 def get_config():
+    config = DynamicConfig("config.yml", debug=True, mode="production")
     config.force_reload()
     return jsonify(config.config)
 
@@ -163,8 +160,9 @@ def get_config():
 @app.route("/config/<path:key>", methods=["GET"])  # ✅ 允许 `/` 作为 key 的一部分
 def get_config_key(key):
     """获取指定配置项的值，并支持自动重新加载"""
+    config = DynamicConfig("config.yml", debug=True, mode="production")
     config.force_reload()  # ✅ 先重新加载配置
-    value = config.get(key)  # ✅ 取值
+    value = Config.get(key)  # ✅ 取值
     if value is None:
         return jsonify({"error": "Key not found"}), 404  # ✅ 404 + 友好错误信息
     return jsonify(value)
