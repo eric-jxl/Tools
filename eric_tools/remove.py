@@ -17,7 +17,6 @@ class RemoveFile(object):
 
     @staticmethod
     def fileremove(filename, timedifference):
-        '''remove file'''
 
         date = datetime.datetime.fromtimestamp(os.path.getmtime(filename))
         now = datetime.datetime.now()
@@ -25,16 +24,14 @@ class RemoveFile(object):
         if (now - date).seconds > timedifference:
             if os.path.exists(filename):
                 os.remove(filename)
-                print 'remove file: %s' % filename
+                print('remove file: %s' % filename)
             else:
-                print 'no such file: %s' % filename
+                print('no such file: %s' % filename)
 
 
 FILE_DIR = '/home'
 
 if __name__ == '__main__':
-
-    print 'Script is running...'
 
     while True:
         ITEMS = os.listdir(FILE_DIR)
@@ -44,7 +41,7 @@ if __name__ == '__main__':
                 NEWLIST.append(FILE_DIR + names)
 
         for names in NEWLIST:
-            print 'current file: %s' % (names)
+            print('current file: %s' % (names))
             RemoveFile.fileremove(names, 10)
 
         time.sleep(2)

@@ -25,17 +25,14 @@ class PostgreSQL(object):
         self.__dict__[key] = value
 
     def __getattr__(self, item):
-        print self.__dict__[item]
         return self.__dict__[item]
 
     def __call__(self, *args, **kwargs):
-        print '%s'% PostgreSQL.__dict__
+        print('%s' % PostgreSQL.__dict__)
 
     @property
     def info(self):
-        return psycopg2.__version__,psycopg2.__doc__
-
-
+        return psycopg2.__version__, psycopg2.__doc__
 
     def operate(self, sql, params):
         count = 0
@@ -45,7 +42,7 @@ class PostgreSQL(object):
             self.conn.commit()
             self.close()
         except Exception, e:
-            print e.message
+            print(e.message)
         return count
 
     def connect(self):
@@ -66,7 +63,7 @@ class PostgreSQL(object):
             result = self.cursor.fetchone()
             self.close()
         except Exception, e:
-            print e.message
+            print(e.message)
         return result
 
     def get_all(self, sql, params=()):
@@ -77,7 +74,7 @@ class PostgreSQL(object):
             tup = self.cursor.fetchall()
             self.close()
         except Exception, e:
-            print e.message
+            print(e.message)
         return tup
 
     def insert(self, sql, params=()):
@@ -88,7 +85,3 @@ class PostgreSQL(object):
 
     def delete(self, sql, params=()):
         return self.operate(sql, params)
-
-
-
-

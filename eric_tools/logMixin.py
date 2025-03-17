@@ -34,8 +34,6 @@ class StrategyMeta(type):
 
         return super().__new__(meta, name, bases, dct)
 
-# 假设SecurityMixin, CacheMixin, CacheControlMixin已定义
-
 
 class MySecureClass(metaclass=StrategyMeta):
     security_required = True
