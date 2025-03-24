@@ -7,15 +7,12 @@ import logging
 from collections.abc import MutableMapping
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from flask import Flask, jsonify, redirect
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__file__.rsplit("/", 1)[1])
 
 __all__ = ["DynamicConfig"]
 
-# Flask Web Service for testing
-app = Flask(__name__)
 
 
 class ConfigFileHandler(FileSystemEventHandler):
@@ -144,29 +141,6 @@ class DynamicConfig(MutableMapping):
             self._observer.stop()
             self._observer.join()
 
-
-@app.route("/", methods=["GET"])
-def index():
-    return redirect("/config/")
-
-
-@app.route("/config/", methods=["GET"])
-def get_config():
-    config = DynamicConfig("config.yml", debug=True, mode="production")
-    config.force_reload()
-    return jsonify(config.config)
-
-
-@app.route("/config/<path:key>", methods=["GET"])  # ✅ 允许 `/` 作为 key 的一部分
-def get_config_key(key):
-    """获取指定配置项的值，并支持自动重新加载"""
-    config = DynamicConfig("config.yml", debug=True, mode="production")
-    config.force_reload()  # ✅ 先重新加载配置
-    value = config.get(key)  # ✅ 取值
-    if value is None:
-        return jsonify({"error": "Key not found"}), 404  # ✅ 404 + 友好错误信息
-    return jsonify(value)
-
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    config = DynamicConfig(watch_file="config.yml")
+    print(config.get("development.password"))
